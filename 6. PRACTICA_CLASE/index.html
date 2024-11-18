@@ -1,16 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Clase</title>
+    <title>Lista de Mejoras de la Clase</title>
+    <style>
+        /* Estilo general para el cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* overflow: hidden; */
+            background-image: url('FotoWhatsapp.jpg');
+            /* Ruta de tu imagen */
+            background-size: 20%;
+            background-position: center;
+            background-attachment: fixed;
+            /* Fija la imagen al fondo */
+            background-repeat: repeat;
+        }
+
+        /* Efecto psicodélico superpuesto */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(270deg, rgba(255, 0, 204, 0.3), rgba(51, 51, 255, 0.3), rgba(255, 153, 51, 0.3), rgba(51, 255, 51, 0.3), rgba(51, 204, 255, 0.3), rgba(255, 102, 153, 0.3));
+            background-size: 1200% 1200%;
+            animation: psychedelic-bg 1s ease infinite;
+            z-index: 0;
+            pointer-events: none;
+            /* Evita que interfiera con los clics */
+        }
+
+        /* Animación de fondo psicodélico */
+        @keyframes psychedelic-bg {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Contenedor de la lista */
+        .task-list-container {
+            position: absolute;
+            width: 30%;
+            padding: 20px;
+            background-color: rgba(211, 172, 172, 0.9);
+            /* Fondo semitransparente */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            margin: 10% 0 0 10%;
+            /* 10% de margen arriba, 15% a la izquierda */
+            z-index: 1;
+            /* Coloca el contenedor sobre el fondo animado */
+        }
+
+        /* Estilos para el encabezado */
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        /* Estilo de la lista de viñetas */
+        ul {
+            padding: 0;
+            list-style-type: disc;
+            padding-left: 20px;
+            /* Espacio para las viñetas */
+        }
+
+        ul li {
+            padding: 8px 0;
+            color: #555;
+        }
+    </style>
+
     <title>Pagina de Clase</title>
     <link rel="stylesheet" href="styles/styles.css"> <!-- Enlace a tu CSS -->
+
+
+
 </head>
 
 <body>
+    <!-- Cuadro derecho -->
+    <div class="right-box">
+        <!-- Imagen principal -->
+        <img src="lentejas-con-chorizo.jpg" alt="Imagen de lentejas" class="img-principal" width="30" height="300">
+
+        <!-- Imagen superpuesta -->
+        <img src="chorizo.jpg" alt="Imagen de chorizo" class="img-superpuesta superposed-image" width="5" height="100">
+
+        <!-- Contenido del cuadro derecho -->
+        <div class="text-content">
+            <h2>Receta de Lentejas</h2>
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 taza de lentejas</li>
+                <li>1 cebolla</li>
+                <li>1 zanahoria</li>
+                <li>2 dientes de ajo</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <h3>Pasos principales:</h3>
+            <ol>
+                <li>Remojar las lentejas en agua durante 4 horas.</li>
+                <li>Sofreír la cebolla, ajo y zanahoria picados.</li>
+                <li>Agregar las lentejas y cocinar hasta que estén tiernas.</li>
+                <li>Salpimentar al gusto antes de servir.</li>
+            </ol>
+        </div>
+    </div>
 
 
     <!-- Barra de navegación -->
@@ -51,6 +166,29 @@
 
 
 
+
+
+    <div class="task-list-container">
+        <h2>Lista de Mejoras de la Clase</h2>
+        <ul id="task-list">
+            <li>Hacer más ejercicios prácticos</li>
+            <li>SNACKS GRATIS</li>
+            <li>Lunes de homofobia</li>
+            <li>Martes de descanso</li>
+            <li>Miércoles de bolos</li>
+            <li>Jueves de racismo</li>
+            <li>Viernes de machismo menos para Sofi</li>
+            <li>10 minutos de meditación diarios</li>
+            <li>Hacer un resumen al final de la clase</li>
+            <li>Al principio de la clase hacer repaso de la sesión anterior</li>
+            <li>Tener una perspectiva general de la asignatura y nuestro recorrido por ella</li>
+        </ul>
+    </div>
 </body>
+
+<audio controls loop style=" z-index: 100; position: absolute; top: 800px;">
+    <source src="caminitos.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+</audio>
 
 </html>
