@@ -18,7 +18,7 @@ body {
     margin: 20px auto;
     /* Center the CV on the page */
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     /* Border around the CV */
 }
 
@@ -42,7 +42,7 @@ header p {
 
 /* Styling for each section's title */
 h2 {
-    background-color: #f4f4f4;
+    background-color: #AED6F1;
     /* Light gray background */
     padding: 10px;
     margin-bottom: 15px;
